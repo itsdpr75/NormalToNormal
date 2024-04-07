@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open GL to DirectX</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/menu.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu menua">
+            <button onclick="window.location.href = '/index.html'">Volver a la pagina principal</button>
+        </div>
+        <div class="menuimg">
+            <img class="icon" src="/resources/icon.png" onclick="location.href='https://twitter.com/ItsDPR';">
+        </div>
+        <div class="menu">
+            <button onclick="window.location.href = '/convertidores/dx-to-gl/dx-to-gl.html'">DirectX a OpenGL</button>
+        </div>
+    </div>
+    <p id="textopres">Conversor de normales OpenGL a DirectX</p>
+    <div class="main-container">
+        <div class="container">
+            <div class="button-wrapper">
+                <input type="file" id="fileInput" accept=".png, .jpg, .jpeg">
+                <button id="convertButton">Convertir</button>
+                <button id="saveButton">Guardar</button>
+            </div>
+            <div class="preview-wrapper">
+                <div id="previewInput" class="preview"></div>
+                <a id="downloadLink" download="converted_image.png">Descargar imagen</a>
+                <div id="previewOutput" class="preview"></div>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script src="converter.js"></script>
+    <div class="info">
+        <div>
+            <p id="aviso">Atención</p>
+            <p id="texto">La siguiente herramienta usa los recursos de tu dispositivo, por lo que un incremento del consumo de recursos se debe y siempre se debera al proceso de conversion</p>
+        </div>
+        <div>
+            <p id="textogrande">Si encuentra una imagen como esta: </p>
+            <img id="imagen" src="/resources/fail.webp" alt="">
+            <p id="textogrande">hay tres razones por las que esto pueda pasar: </p>
+            <p id="textograndeazul">1. La imagen ya era un mapa de normales DirectX</p>
+            <p id="textograndeazul">2. La imagen tiene un problema relacionado con los datos binarios: </p>
+            <p id="texto">No tengo mucha informacion al respecto, pero se puede arreglar generando un mapa de alturas a partir de los normales y volviendo a convertirlos a normales. </p>
+            <p id="texto">Para esto recomiendo usar el programa "Materialize"</p>
+            <p id="textograndeazul">3. la intensidad del mapa es demasiado exagerada:</p>
+            <p id="texto">Hay veces que un mapa de normales que tiene demasiada fuerza puede romperse facilmente al manipularlo de esta forma, si crees que es el caso, puedes probar a hacer lo que e mencionado antes, <p> lo conviertes a mapa de alturas y lo buelves a combertir a mapa de normales.</p>
+            <p></p>
+            <p id="textograndeazul">Para cualquier problema con la pagina puedes preguntarmelo por twitter, el cubito de arriba es un boton, mientras que no tenga mi pagina, este llevará a mi twitter.</p>
+        </div>
+    </div>
+</body>
+</html>

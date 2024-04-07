@@ -1,0 +1,7 @@
+body {
+    background: url(/resources/fondo.webp) no-repeat; /* Define el vídeo como fondo */
+    background-size: cover; /* Ajusta el tamaño del fondo */
+}
+#imagen {
+    transform: rotate(0deg);
+}

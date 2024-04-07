@@ -1,0 +1,122 @@
+body {
+    background-color: #000000;
+    background: url(/resources/fondo.webp) no-repeat; /* Define el vídeo como fondo */
+    background-size:initial; /* Ajusta el tamaño del fondo */
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Ajusta este valor según tus necesidades */
+    margin-bottom: 20px; /* Añade espacio entre el contenedor y las vistas previas */
+    padding: 40px;
+    border: solid rgb(0, 153, 255);
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: 14px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    width: 100%;
+    margin-bottom: 20px; /* Añade espacio entre el contenedor y las vistas previas */
+}
+
+.preview-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Alinea los elementos verticalmente en la parte superior */
+    width: 100%;
+    margin-bottom: 20px; /* Añade espacio entre el contenedor y las vistas previas */
+}
+
+.preview {
+    max-width: 200px; /* Limita el ancho máximo de las vistas previas */
+    max-height: 200px; /* Limita la altura máxima de las vistas previas */
+    border: 1px solid rgb(0, 153, 255); /* Añade un borde para mejorar la visualización */
+    margin-bottom: 10px; /* Añade espacio entre las vistas previas */
+}
+
+#downloadLink {
+    display: none; /* Muestra el enlace de descarga por defecto */
+    
+}
+.button-wrapper button, #fileInput {
+    background-color: rgba(0, 0, 0, 0.747); /* Cambia el color de fondo de los botones a verde */
+    color: white; /* Cambia el color del texto de los botones a blanco */
+    padding: 10px 20px; /* Añade un poco de relleno a los botones */
+    text-decoration: none; /* Elimina el subrayado del enlace de descarga */
+    margin: 0 10px; /* Añade un poco de margen a los lados de los botones */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima de los botones */
+    border-radius: 14px;
+    border-color: rgb(0, 153, 255);
+}
+
+.preview {
+    max-width: 450px; /* Limita el ancho máximo de las vistas previas */
+    max-height: 450px; /* Limita la altura máxima de las vistas previas */
+    border: 1px solid rgb(0, 153, 255); /* Cambia el color del borde de las vistas previas a verde */
+    margin-bottom: 15px; /* Añade espacio entre las vistas previas */
+    padding: 10px; /* Añade relleno al contenedor para separar la imagen del borde */
+    box-sizing: border-box; /* Asegura que el tamaño del contenedor incluya el borde y el relleno */
+    border-radius: 14px; /*Ajuste del borde redondeado*/
+}
+
+.preview img {
+    display: block; /* Asegura que la imagen se ajuste correctamente dentro del contenedor */
+    max-width: 100%; /* Garantiza que la imagen no supere el ancho del contenedor */
+    max-height: 100%; /* Garantiza que la imagen no supere la altura del contenedor */
+}
+#aviso {
+    color: rgb(255, 77, 77);
+    font-size: xx-large;
+}
+#texto {
+    color: white;
+}
+#textogrande {
+    color: rgb(133, 255, 51);
+    font-size: x-large;
+}
+#textograndeazul {
+    color: rgb(51, 255, 228);
+    font-size: x-large;
+}
+#textopres {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.534);
+    border: none;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+.fileInput {
+    border: solid rgb(0, 153, 255);
+}
+button {
+    color: white;
+    background-color: rgba(32, 32, 32, 0);
+    border-color: rgba(255, 255, 255, 0);  
+}
+.info {
+   color: aliceblue;
+   background-color: rgba(0, 0, 0, 0.7); 
+   border-radius: 14px;
+   padding: 20px;  /* margen del texto */
+   font-size: larger;
+}
