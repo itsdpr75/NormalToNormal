@@ -1,7 +1,13 @@
 body {
-    background: url(/resources/fondo.webp) no-repeat; /* Define el vídeo como fondo */
-    background-size: cover; /* Ajusta el tamaño del fondo */
+    background-image: url(/resources/fondo.webp); /* Define la imagen como fondo */
+    background-size: contain; /* Ajusta el tamaño del fondo */
+    background-position: 50%; /* Posiciona la imagen en el centro vertical y horizontal */
+    background-attachment: scroll; /* Permite que la imagen de fondo se desplace con el contenido de la página */
+    cursor: default;
+    display: block;
 }
+
+
 #imagen {
     transform: rotate(0deg);
 }

@@ -1,9 +1,12 @@
 body {
-    background-color: #000000;
-    background: url(/resources/fondo.webp) no-repeat; /* Define el vídeo como fondo */
-    background-size:initial; /* Ajusta el tamaño del fondo */
-    color: white;
+    background-image: url(/resources/fondo.webp); /* Define la imagen como fondo */
+    background-size: contain; /* Ajusta el tamaño del fondo */
+    background-position: 50%; /* Posiciona la imagen en el centro vertical y horizontal */
+    background-attachment: scroll !important; /* Permite que la imagen de fondo se desplace con el contenido de la página */
+    cursor: default;
+    display: block;
 }
+
 
 .main-container {
     display: flex;
