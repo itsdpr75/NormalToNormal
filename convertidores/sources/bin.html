@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bin</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      background-color: black;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .quote-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #quote {
+      color: white;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="quote-container">
+      <p id="quote">a</p>
+    </div>
+    <img src="tu_imagen.jpg" alt="Imagen" class="image">
+  </div>
+  <script>
+    const quotes = [
+      "hola",
+      "como as llegado aqui?",
+      "bro",
+      "xd",
+      "hmmm",
+      "tengo hambre",
+      "Me das una galleta?",
+    ];
+
+    const quoteElement = document.getElementById("quote");
+
+    function getRandomQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      return quotes[randomIndex];
+    }
+
+    function changeQuote() {
+      quoteElement.textContent = getRandomQuote();
+    }
+
+    // tiempo
+    setInterval(changeQuote, 120000);
+    
+    changeQuote();
+  </script>
+</body>
+</html>
