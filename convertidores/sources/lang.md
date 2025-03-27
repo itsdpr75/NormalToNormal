@@ -16,7 +16,7 @@ A continuación se muestra una lista de los lenguajes a los que se ha traducido 
 - R: `.R`
 - Bash: `.sh`
 - BASIC: `.bas` 
-- Turbo Pascal: `.pas`
+- Pascal: `.pas`
 - Fortran: `.f90`
 - AWK: `.awk`
 
@@ -28,9 +28,8 @@ Lenguajes mas antiguos como Turbo Pascal o Fortran, codigo en ensamblador, awk, 
 # Otra informacion
 
 - Fortran
-    En fortran se usa Fortran 90 para realizar los calculos, elegí este lenguaje por su valor historico en calculos cientificos
+    En fortran se usa Fortran 90 para realizar los calculos
     
-- Turbo Pascal
-    recomiendo el entorno original desarroyado por Borland
+- Pascal
+    recomiendo el entorno original de Borland
     pueds usar tambien Free Pascal Compiler (FPC) con Lazarus
-    usar la version 5.5 de turbo pascal
